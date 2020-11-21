@@ -4,7 +4,7 @@ This app is built to track money and help users keep track of their purchases, w
 
 Built in Repl.it in the fall of 2020
 
-###Team members:
+### Team members:
 
 Muhsin Wahi-Anwar
 Tejas Marimuthu
