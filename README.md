@@ -6,5 +6,6 @@ Built in Repl.it in the fall of 2020
 
 ### Team members:
 
-Muhsin Wahi-Anwar
-Tejas Marimuthu
+* Muhsin Wahi-Anwar
+
+* Tejas Marimuthu
