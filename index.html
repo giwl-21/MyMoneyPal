@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table, th, td {
+      border: 0px;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="sketch.js"></script>
+    <script src="script.js"></script>
+  </head>
+  
+  <username id = "usernameDisplay">
+    
+  </username>
+
+  <body>
+    
+    <div class = "dropdown" >
+        <button class="dropbtn" id = "dropdownBtn"> </button>
+        <div class="dropdown-content">
+          <a href="#">Help</a>
+          <a href="#">Account Settings</a>
+          <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <header><h1><u>My Money Pal</u></h1></header>
+    <br>
+
+    <div id="Graph">
+
+    </div>
+
+    <balance id = "bal">
+      <h2>Balance: <span id="balanceDisplay"></span></h2>
+    </balance> 
+
+    <monthlyIncome id= "monthIn">
+      <h2>Monthly Income: <span id="monthInDisplay"></span></h2>
+    </monthlyIncome>
+
+    <monthlyExpense id= "monthEx">
+      <h2>Monthly Expense: <span id="monthExDisplay"></span></h2>
+    </monthlyExpense>
+    <br>
+ 
+    <addTransaction id = "addTrans">
+      <h2>Add Transactions</h2>
+      
+      <table id="addTransData" cellspacing="10">
+        <tr>
+          <th>Date</th>
+          <th>Category</th>
+          <th>Amount</th>
+          <th>Sign</th>
+        </tr>
+
+        <tr>
+
+          <td>
+            <input type="date" id="date">
+          </td>
+
+          <td>
+            <select id="category">
+              <option value="Food">Food</option>
+              <option value="Shopping">Shopping</option>
+              <option value="Travel">Travel</option>
+              <option value="Social">Social</option>
+              <option value="Event">Event</option>
+              <option value="Money Intake">Money Received</option>
+            </select>
+          </td>
+          
+          <td>
+              <input type="Number" id="amount">
+          </td>
+
+          <td>
+              <select id="transactionSign">
+                <option value="pos">Positive</option>
+                <option value="neg">Negative</option>
+              </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <button onclick = "xmlFunctionRaw(xmlTransaction);" style="color: black">Submit</button>
+            <span style= "color:red" id="transactionError"></span>
+          </td>
+        </tr>
+        
+      </table>
+
+    </addTransaction>
+       
+    <transactionHistory id = "transHist">
+      <h2>Transaction History</h2>
+      <table cellspacing="10" id="tableHist">
+
+        <tr>
+          <th>Date</th>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </table>
+        
+    </transactionHistory>
+
+
+   
+    <br>
+    <tips id = "tips">
+      <h2>How To Better Manage Your Money</h2>
+        <ul>
+          <li id="tip1"></li>
+        </ul>
+
+    </tips>
+  </body>
+    <script>
+      //TO INITIALIZE DISPLAY AND VALUES
+      xmlFunction(xmlBalance);
+      xmlFunction(xmlTransactionHistory);
+      xmlFunction(xmlMonthlyValues);
+      document.getElementById("dropdownBtn").innerHTML = "@" + user.name;
+      xmlFunction(xmlTips);
+    </script>  
+</html>

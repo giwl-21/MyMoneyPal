@@ -1,0 +1,19 @@
+<database>
+  <user username="tejasmarbartholemew">
+    <transactions>
+      <transaction>
+        <amount>-10.00</amount>
+        <category>Food</category>
+        <time>1572772170472</time>
+        <time-entered>1572772170472</time-entered>
+      </transaction>  
+
+      <transaction>
+        <amount>10.00</amount>
+        <category>Shopping</category>
+        <time>1572772170472</time>
+        <time-entered>1572772170472</time-entered>
+      </transaction>  
+    </transactions>
+  </user>
+</database>

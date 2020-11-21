@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+  line-height: 1.75;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(48, 48, 48);
+  padding: 40px;
+  text-align: center;
+  font-size: 35px;
+  
+}
+
+body {
+  background-color: rgb(78, 138, 125);
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  size: 40px;
+  text-align: left;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+input, select {
+  color: black;
+}
+
+#Graph {
+  text-align: center;
+  padding: 10px;
+  float: right; 
+  width: 40%;
+}
+#addTrans {
+  padding: 20px;
+  
+  color: white;
+  float: left;
+  width: 60%;
+}
+
+#transHist {
+  float: left;
+  text-align: left;
+  padding: 20px;
+  width: 60%;
+}
+
+#tips{
+  padding: 20px;
+  float:right;
+  width: 40%;
+}
+#bal{
+  padding:20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  float: left;
+  width: 60%;
+  background-color: rgb(160, 147, 130);
+}
+
+#monthEx{
+padding:20px;
+  margin-bottom: 5px;
+  float: left;
+  width: 60%;
+  background-color: rgb(109, 40, 13);
+}
+#monthIn{
+padding:20px;
+  margin-bottom: 5px;
+  float: left;
+  width: 60%;
+  background-color: rgb(41, 109, 69);
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
